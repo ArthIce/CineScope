@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CineScope - Descubra, avalie e compartilhe opiniões sobre filmes e séries.">
+    <title>CineScope</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<!------------------------------------------------------------------------------------------------------------------------------>>
+
+<body>
+    
+    <!-- Cabeçalho -->
+    <header class="header">
+
+        <div class="container">
+            <a href="/" class="logo">Cine<span>Scope</span></a>
+
+            <nav class="navbar">
+                <a href="/">Início</a>
+                <a href="/catalogo?tipo=filme">Filmes</a>
+                <a href="/catalogo?tipo=serie">Séries</a>
+            </nav>
+
+            <form class="search-form" action="/pesquisa" method="GET">
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="Buscar filmes e séries..."
+                    aria-label="Buscar filmes e séries"
+                >
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Banner principal -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">DESTAQUE DA SEMANA</span>
+
+                    <h1>Interestelar</h1>
+
+                    <p>
+                        Em um futuro em que a Terra está se tornando
+                        inabitável, um grupo de exploradores parte
+                        em uma missão que pode determinar o futuro
+                        da humanidade.
+                    </p>
+
+                    <div class="hero-info">
+                        <span>2014</span>
+                        <span>Ficção científica</span>
+                        <span>⭐ 9.2</span>
+                    </div>
+
+                    <a href="/filme/interestelar" class="btn-primary">
+                        Ver detalhes
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filmes em alta -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Filmes em alta</h2>
+                    <a href="/catalogo?tipo=filme">Ver todos</a>
+                </div>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Filme+1"
+                             alt="Capa ilustrativa do filme 1">
+                        <div class="movie-info">
+                            <h3>Interestelar</h3>
+                            <p>2014 · Ficção científica</p>
+                            <span class="rating">⭐ 9.2</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Filme+2"
+                             alt="Capa ilustrativa do filme 2">
+                        <div class="movie-info">
+                            <h3>A Origem</h3>
+                            <p>2010 · Ficção científica</p>
+                            <span class="rating">⭐ 8.8</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Filme+3"
+                             alt="Capa ilustrativa do filme 3">
+                        <div class="movie-info">
+                            <h3>O Batman</h3>
+                            <p>2022 · Ação</p>
+                            <span class="rating">⭐ 8.1</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Filme+4"
+                             alt="Capa ilustrativa do filme 4">
+                        <div class="movie-info">
+                            <h3>Duna</h3>
+                            <p>2021 · Ficção científica</p>
+                            <span class="rating">⭐ 8.5</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Séries populares -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Séries populares</h2>
+                    <a href="/catalogo?tipo=serie">Ver todas</a>
+                </div>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Serie+1"
+                             alt="Capa ilustrativa da série 1">
+                        <div class="movie-info">
+                            <h3>Breaking Bad</h3>
+                            <p>2008 · Drama</p>
+                            <span class="rating">⭐ 9.5</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Serie+2"
+                             alt="Capa ilustrativa da série 2">
+                        <div class="movie-info">
+                            <h3>Dark</h3>
+                            <p>2017 · Suspense</p>
+                            <span class="rating">⭐ 8.7</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Serie+3"
+                             alt="Capa ilustrativa da série 3">
+                        <div class="movie-info">
+                            <h3>The Last of Us</h3>
+                            <p>2023 · Drama</p>
+                            <span class="rating">⭐ 8.6</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="https://placehold.co/300x450/252525/ffffff?text=Serie+4"
+                             alt="Capa ilustrativa da série 4">
+                        <div class="movie-info">
+                            <h3>Stranger Things</h3>
+                            <p>2016 · Ficção científica</p>
+                            <span class="rating">⭐ 8.7</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <a href="/" class="logo">Cine<span>Scope</span></a>
+            <p>
+                Descubra, avalie e compartilhe
+                sua paixão pelo cinema.
+            </p>
+            <p class="copyright">
+                &copy; 2026 CineScope. Projeto acadêmico.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
